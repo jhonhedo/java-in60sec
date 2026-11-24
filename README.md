@@ -11,13 +11,11 @@
   - `align.py`: word timestamps from voiceover MP3 + script.
   - `make_episode.sh`: renders, mixes and outputs the final reel.
 
-## Setup (any Linux/Mac/WSL machine)
-```
-pip install skia-python numpy pocketsphinx pillow
-npm pack @fontsource/jetbrains-mono && tar xzf fontsource-jetbrains-mono-*.tgz
-# Inter font: install Inter (Bold/SemiBold/Black)
-```
-Then edit the font paths at the top of `engine/anim.py` (`FD` and the Inter paths).
+## Setup
+`./setup.sh` installs skia-python, numpy, pocketsphinx, pillow and ffmpeg. Fonts are already in `fonts/`.
+
+## Automation
+A daily scheduled task reads `state.json`, makes the next backlog topic, commits the episode to `episodes/epNN_<slug>/` (module, script, caption, final MP4), and queues the reel in Buffer as a draft for John's approval.
 
 ## Making an episode
 1. Copy the closest module (e.g. `cp al.py gc.py`) and build the new scenes in its `T` timeline.
