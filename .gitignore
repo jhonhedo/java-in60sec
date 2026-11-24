@@ -1,0 +1,5 @@
+__pycache__/
+*.part.mp4
+*.raw
+sfx_*.wav
+parts.txt

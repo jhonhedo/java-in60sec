@@ -1,0 +1,26 @@
+{
+  "next_episode": 4,
+  "backlog": [
+    "Why String is immutable",
+    "equals() and hashCode() contract: what breaks if you override only one",
+    "StringBuilder vs + in a loop",
+    "Stack vs Heap: where variables live",
+    "final vs immutable",
+    "static explained with memory",
+    "How Garbage Collection works (young/old generation)",
+    "Checked vs unchecked exceptions",
+    "Race condition on count++ (threads)",
+    "Java Streams: lazy evaluation",
+    "Integer cache: why 127 == 127 but 128 != 128",
+    "try-with-resources",
+    "Interface vs abstract class",
+    "HashSet uses a HashMap inside",
+    "volatile explained",
+    "ConcurrentHashMap vs synchronized HashMap",
+    "Optional: stop returning null",
+    "Pass-by-value: Java never passes by reference",
+    "Records in Java",
+    "Virtual threads (Project Loom)"
+  ],
+  "done": ["String Pool: == vs .equals()", "HashMap internals", "ArrayList vs LinkedList"]
+}
